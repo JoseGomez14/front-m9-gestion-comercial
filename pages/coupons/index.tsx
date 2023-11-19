@@ -207,6 +207,7 @@ const Coupons = () => {
                   setOpenCreateModal(true);
                 }}
                 className='text-lg text-blue-500 border-4 border-blue-500 px-2 py-1 rounded-lg'
+                data-testid="addCouponBtn"
               >
                 Nuevo Cupón +
               </button>

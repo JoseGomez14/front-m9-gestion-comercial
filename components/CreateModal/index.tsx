@@ -72,6 +72,7 @@ const CreateModal = ({
             <fieldset className='flex  flex-col gap-2'>
               <label htmlFor='name'>Nombre</label>
               <input
+                data-testid="name"
                 id='name'
                 name='name'
                 type='text'
@@ -82,6 +83,7 @@ const CreateModal = ({
               />
               <label htmlFor='description'>Descripción</label>
               <textarea
+              data-testid="description"
                 id='description'
                 name='description'
                 cols={30}
@@ -113,6 +115,7 @@ const CreateModal = ({
                     <label htmlFor='discountValue'>&nbsp;Descuento fijo</label>
                   </div>
                   <input
+                  data-testid="discountValue"
                     type='number'
                     name='discountValue'
                     id='discountValue'
@@ -171,6 +174,7 @@ const CreateModal = ({
               >
                 Valor mínimo
                 <input
+                data-testid="minValue"
                   type='number'
                   name='minValue'
                   id='minValue'
@@ -191,6 +195,7 @@ const CreateModal = ({
                 Descuento máximo
                 <input
                   type='number'
+                  data-testid="maxDiscount"
                   name='maxDiscount'
                   id='maxDiscount'
                   placeholder='Valor'
@@ -209,6 +214,7 @@ const CreateModal = ({
               <div className='flex-grow flex flex-col'>
                 <label htmlFor='startDate'>Válida desde</label>
                 <input
+                  data-testid="startDate"
                   type='datetime-local'
                   name='startDate'
                   id='startDate'
@@ -221,6 +227,7 @@ const CreateModal = ({
               <div className='flex-grow flex flex-col'>
                 <label htmlFor='endDate'>Válida hasta</label>
                 <input
+                                  data-testid="endDate"
                   type='datetime-local'
                   name='endDate'
                   id='endDate'
@@ -335,6 +342,7 @@ const CreateCouponModal = ({
         <label htmlFor='amount' className='flex-grow flex flex-col'>
           Cantidad de cupones
           <input
+          data-testid="amount"
             type='number'
             name='amount'
             id='amount'
