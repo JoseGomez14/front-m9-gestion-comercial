@@ -1,0 +1,15 @@
+export const DISCOUNT_MOCK={
+    id: "1",
+    name: "test",
+    description: "test",
+    startDate: new Date(),
+    endDate: new Date(),
+    discountPercentage: 1,
+    maxDiscount: 1,
+    discountValue: 1,
+    minValue: 1,
+    city: "test",
+    status: "test",
+    userType: "test",
+    familyProfile: "test",
+}
