@@ -117,6 +117,7 @@ const EditModal = ({
                 type='text'
                 name='name'
                 id='name'
+                data-testid="nameEdit"
                 defaultValue={data.name}
                 placeholder={`Nombre ${typeText}`}
                 className='bg-gray-200 p-2 rounded-lg'
@@ -325,6 +326,7 @@ const EditModal = ({
               </button>
               <button
                 type='submit'
+                data-testid="editBtn"
                 className='text-lg font-semibold rounded-lg py-2 px-4 border-4 border-blue-500 text-blue-500'
               >
                 Editar

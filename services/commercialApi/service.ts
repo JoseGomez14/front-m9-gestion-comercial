@@ -21,8 +21,13 @@ export const service = {
       body: JSON.stringify(body),
     });
 
+    console.log("En el response: ")
+    console.log(response)
     if (response.ok) {
+      console.log("entre alres")
       const data = await response.json();
+
+      console.log("Data: ",data)
       return data.body;
     }
 
